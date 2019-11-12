@@ -1,1 +1,1 @@
-# Beer App Frontend
+# Beer tracker app Frontend
