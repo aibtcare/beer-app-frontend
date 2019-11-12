@@ -1,12 +1,25 @@
 import React from "react"
 import "./App.css"
+import API from "./api"
 
-function App() {
-	return (
-		<div className="App">
-			<header className="App-header"></header>
-		</div>
-	)
+import TextInput from "./components/TextInput"
+
+class App extends React.Component {
+	state = {
+		beer: []
+	}
+	async componentDidMount() {
+		const res = await API.getBeerByName("bud*")
+		console.log(res)
+	}
+	render() {
+		return (
+			<header>
+				<p>Beer Tracker</p>
+				<TextInput />
+			</header>
+		)
+	}
 }
 
 export default App
