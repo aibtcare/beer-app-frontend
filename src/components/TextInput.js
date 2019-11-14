@@ -1,9 +1,13 @@
 import React from "react"
 
-const TextInput = () => {
+const TextInput = ({ value, handleChange }) => {
 	return (
 		<section>
-			<input className={"Text-input"} />
+			<input
+				className={"Text-input"}
+				value={value}
+				onChange={event => handleChange(event.target.value)}
+			/>
 		</section>
 	)
 }

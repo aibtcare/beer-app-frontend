@@ -2,7 +2,7 @@ import React from "react"
 import "./App.css"
 import API from "./api"
 
-import TextInput from "./components/TextInput"
+import BeerSearch from "./beer-search/BeerSearch"
 
 class App extends React.Component {
 	state = {
@@ -16,7 +16,7 @@ class App extends React.Component {
 		return (
 			<header>
 				<p>Beer Tracker</p>
-				<TextInput />
+				<BeerSearch />
 			</header>
 		)
 	}
