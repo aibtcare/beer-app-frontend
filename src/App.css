@@ -29,3 +29,12 @@
 	border-bottom-color: #000000;
 	border-bottom-width: 1px;
 }
+
+.Beer-preview {
+	display: flex;
+	flex-direction: row;
+}
+
+.Beer-preview > p {
+	margin-left: 10px;
+}
